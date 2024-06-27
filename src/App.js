@@ -1,9 +1,5 @@
-function App() {
-  return (
-    <>
-      <p>this is a travel journel</p>
-    </>
-  );
-}
+import Card from "./Card.js";
 
-export default App;
+export default function App() {
+  return <Card />;
+}
