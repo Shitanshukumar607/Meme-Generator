@@ -1,3 +1,5 @@
+import Header from "./components/Header.js";
+
 export default function App() {
-  return <h1>this is a meme generator</h1>;
+  return <Header />;
 }
