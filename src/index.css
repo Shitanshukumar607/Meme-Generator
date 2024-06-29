@@ -50,23 +50,29 @@ body {
 }
 
 main {
-  padding: 30px;
+  padding: 36px;
 }
 
-form {
+.form {
   display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
+  grid-template: 100% 100% / 1fr 1fr;
   gap: 17px;
 }
 
-form input {
+.form--label {
+  margin-bottom: 5px;
+}
+
+.form--input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   border: 1px solid #d5d4d8;
   text-indent: 5px;
+  height: 35px;
+  width: 100%;
 }
 
-form button {
+.form--button {
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
