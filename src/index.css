@@ -50,10 +50,10 @@ body {
 }
 
 main {
-  padding: 36px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 main div {
@@ -68,7 +68,7 @@ main input {
   text-indent: 5px;
   height: 40px;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 main button {
@@ -80,7 +80,7 @@ main button {
   border: none;
   cursor: pointer;
   height: 50px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 main img {
