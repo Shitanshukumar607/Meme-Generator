@@ -12,7 +12,10 @@ body {
 #root {
   width: 550px;
   min-height: 513px;
-  background-color: #eb1414;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
 }
 
 .header {
@@ -22,6 +25,8 @@ body {
   justify-content: space-between;
   height: 65px;
   padding: 5px 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .header-div {
@@ -85,4 +90,34 @@ main button {
 
 main img {
   min-width: 100%;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
