@@ -10,7 +10,7 @@ This project is a meme generator built using React (my first React project) and 
 ## Technologies Used
 
 - React
-- [IMGFLIP API](https://imgflip.com/) - Used for fetching meme templates
+- [IMGFLIP API](https://api.imgflip.com) - Used for fetching meme templates
 
 ## Installation
 
