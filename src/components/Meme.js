@@ -1,5 +1,4 @@
-import memesData from "../memesData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Meme() {
   const [meme, setMeme] = useState({
@@ -8,10 +7,18 @@ export default function Meme() {
     bottomText: "bottom text",
   });
 
+  const [allMemes, setAllMemes] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.imgflip.com/get_memes")
+      .then((res) => res.json())
+      .then((data) => setAllMemes(data.data.memes));
+  }, []);
+
   function getMemeImage() {
-    let x = Math.floor(Math.random() * memesData.data.memes.length);
+    let x = Math.floor(Math.random() * allMemes.length);
     console.log(x);
-    let url = memesData.data.memes[x].url;
+    let url = allMemes[x].url;
     console.log(url);
 
     setMeme((prev) => {
@@ -37,12 +44,14 @@ export default function Meme() {
           onChange={handleChange}
           placeholder="Top Text"
           name="topText"
+          value={meme.topText}
         />
         <input
           type="text"
           onChange={handleChange}
           placeholder="Bottom Text"
           name="bottomText"
+          value={meme.bottomText}
         />
       </div>
 
