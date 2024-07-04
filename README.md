@@ -10,7 +10,7 @@ This project is a meme generator built using React (my first React project) and 
 ## Technologies Used
 
 - React
-- [IMGFLIP API](https://api.imgflip.com/get_memes") - Used for fetching meme templates
+- [IMGFLIP API](https://imgflip.com/) - Used for fetching meme templates
 
 ## Installation
 
@@ -18,7 +18,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/meme-generator.git
+   git clone https://github.com/Shitanshukumar607/meme-generator.git
    ```
 2. Navigate into the project directory:
    ```bash
