@@ -8,6 +8,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #2c3e50;
+  padding: 10px;
 }
 
 #root {
@@ -57,7 +58,8 @@ body {
 }
 
 main {
-  padding: 30px;
+  /* padding: 30px; */
+  padding: 7%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -122,4 +124,27 @@ main img {
 
 .top {
   top: 0;
+}
+
+@media (max-width: 600px) {
+  #root {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  main input,
+  main button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header h4 {
+    display: none;
+  }
 }
