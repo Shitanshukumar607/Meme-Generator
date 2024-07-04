@@ -58,7 +58,7 @@ export default function Meme() {
       <button onClick={getMemeImage}>Get a new meme image 🖼</button>
 
       <div className="meme">
-        <img src={meme.memeImage} />
+        <img src={meme.memeImage} alt="meme image" />
         <h2 className="top"> {meme.topText}</h2>
         <h2 className="bottom">{meme.bottomText}</h2>
       </div>
